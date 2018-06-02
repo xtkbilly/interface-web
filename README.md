@@ -1,4 +1,4 @@
-# readme::author
+# interface-web://readme
 
 ## instruction
 1. download and install Virtualbox 5.2+.
@@ -15,7 +15,9 @@
 + [Virtualbox](https://www.virtualbox.org/).
 
 ## maintainer
-+ fred belotte.
++ [fred belotte](https://github.com/fredbelotte)
++ [Nicholas Escalona](https://github.com/escalonn)
++ [Pushpinder Kaur](https://github.com/kaurrevature)
 
 ## license
-__author__ is licensed under the terms of the [MIT License](https://github.com/fredbelotte/author/blob/master/LICENSE).
+__interface-web__ is licensed under the terms of the [MIT License](https://github.com/revaturecloud/interface-web/blob/master/LICENSE).
