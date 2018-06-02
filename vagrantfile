@@ -22,6 +22,6 @@ Vagrant.configure("2") do |co|
   co.vm.provider "virtualbox" do |vb|
     vb.gui = false
     vb.name = "devbox-#{Time.now.to_i}"
-    vb.memory = 2048
+    vb.memory = 1024
   end
 end
