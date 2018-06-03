@@ -8,5 +8,5 @@ RUN npm run build
 
 FROM nginx:1.14 as deploy
 WORKDIR /www
-COPY --from=build /docker/dist /var/nginx/html
+COPY --from=build /docker/dist/interface-web /usr/share/nginx/html
 EXPOSE 80
