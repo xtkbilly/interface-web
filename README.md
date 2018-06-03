@@ -2,7 +2,7 @@
 
 ## instruction
 1. download and install VirtualBox 5.2+.
-1. download and install Vagrant 2.1.0+.
+1. download and install Vagrant 2.1+.
 1. download or clone this repository.
 1. open the machine shell.
 1. navigate to the repository folder.
