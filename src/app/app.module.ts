@@ -1,3 +1,5 @@
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,6 +16,8 @@ import {
   MatCardModule
 } from '@angular/material';
 import { MainImageComponent } from './components/main-image/main-image.component';
+import { RouterModule } from '@angular/router';
+import { RoutingModule } from './modules/routing/routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import { MainImageComponent } from './components/main-image/main-image.component
     BrowserAnimationsModule,
     MatButtonModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    RoutingModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
