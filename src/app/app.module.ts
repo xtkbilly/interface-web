@@ -13,12 +13,14 @@ import {
   MatGridListModule,
   MatCardModule
 } from '@angular/material';
+import { MainImageComponent } from './components/main-image/main-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MainImageComponent
   ],
   imports: [
     BrowserModule,
