@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.row {
+  height: 16.5%;
+  width: 100%;
+}
+.col-md-12{
+  width: 100%;
+}
+.col-md-11{
+  width: 91.5%;
+}
+.col-md-10{
+  width: 83%;
+}
+.col-md-9{
+  width: 74.5%;
+}
+.col-md-8{
+  width: 66%;
+}
+.col-md-7{
+  width: 55.5%;
+}
+.col-md-6{
+  width: 47%;
+}
+.col-md-5{
+  width: 38.5%;
+}
+.col-md-4{
+  width: 30%;
+}
+.col-md-3{
+  width: 21.5%;
+}
+.col-md-2{
+  width: 13%;
+}
+.col-md-1{
+  width: 8.5%;
+}
+
+.removeShadow{
+
+}
+
+
