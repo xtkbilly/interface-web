@@ -9,11 +9,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
+
 export class FooterComponent implements OnInit {
 
-  today: number = Date.now();
+  /**
+   * Current year displayed in footer
+   */
+today: number = Date.now();
+
+  /**
+   * Constructor for component
+   */
   constructor() { }
 
+  /**
+   * Component lifecycle hook
+   */
   ngOnInit() {
   }
 
