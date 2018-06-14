@@ -319,6 +319,14 @@
     <code>src/app/components/main-image/main-image.component.ts</code>
 </p>
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Main image component
+generates image for landing page</p>
+
+    </p>
 
 
     <p class="comment">
@@ -394,24 +402,6 @@
     </table>
 </section>
 
-    <section>
-    <h3 id="constructor">Constructor</h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-<code>constructor()</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/components/main-image/main-image.component.ts:8</a></div>
-                            </td>
-                        </tr>
-
-            </tbody>
-        </table>
-</section>
 
 
 
@@ -444,13 +434,16 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/main-image/main-image.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/main-image/main-image.component.ts:24</a></div>
                             </td>
                         </tr>
 
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>Lifecycle hook that is called after data-bound properties of a directive are initialized.
+<a href="https://angular.io/api/core/OnInit">https://angular.io/api/core/OnInit</a></p>
+</div>
 
                             <div class="io-description">
                                 <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -469,6 +462,11 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
+/**
+ * Main image component
+ * generates image for landing page
+ */
+
 @Component({
   selector: &#x27;app-main-image&#x27;,
   templateUrl: &#x27;./main-image.component.html&#x27;,
@@ -476,8 +474,15 @@
 })
 export class MainImageComponent implements OnInit {
 
+   /**
+   * @ignore
+   */
   constructor() { }
 
+  /**
+   * Lifecycle hook that is called after data-bound properties of a directive are initialized.
+   * https://angular.io/api/core/OnInit
+   */
   ngOnInit() {
   }
 
