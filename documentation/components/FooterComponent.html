@@ -426,10 +426,16 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/footer/footer.component.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/footer/footer.component.ts:17</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor for component</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -465,13 +471,15 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/footer/footer.component.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/footer/footer.component.ts:27</a></div>
                             </td>
                         </tr>
 
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>Component lifecycle hook</p>
+</div>
 
                             <div class="io-description">
                                 <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -520,10 +528,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/footer/footer.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/footer/footer.component.ts:17</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Current year displayed in footer</p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -543,11 +557,22 @@
   templateUrl: &#x27;./footer.component.html&#x27;,
   styleUrls: [&#x27;./footer.component.css&#x27;]
 })
+
 export class FooterComponent implements OnInit {
 
+  /**
+   * Current year displayed in footer
+   */
 today: number &#x3D; Date.now();
+
+  /**
+   * Constructor for component
+   */
   constructor() { }
 
+  /**
+   * Component lifecycle hook
+   */
   ngOnInit() {
   }
 
