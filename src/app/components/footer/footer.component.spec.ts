@@ -12,7 +12,7 @@ describe('FooterComponent', () => {
       declarations: [ FooterComponent ],
       imports: [ MatGridListModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

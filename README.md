@@ -19,5 +19,9 @@
 + [Nicholas Escalona](https://github.com/escalonn)
 + [Pushpinder Kaur](https://github.com/kaurrevature)
 
+## documentation
+1. run command `compodoc src -s`.
+1. open Compodoc URL specified in command line.
+
 ## license
 __interface-web__ is licensed under the terms of the [MIT License](https://github.com/revaturecloud/interface-web/blob/master/LICENSE).

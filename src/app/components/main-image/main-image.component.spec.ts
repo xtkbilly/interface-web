@@ -12,7 +12,7 @@ describe('MainImageComponent', () => {
       declarations: [ MainImageComponent ],
       imports: [MatCardModule, MatGridListModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
