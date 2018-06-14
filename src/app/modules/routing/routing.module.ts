@@ -5,7 +5,8 @@ import { MainImageComponent } from '../../components/main-image/main-image.compo
 
 const appRoutes: Routes = [
   { path: '', component: MainImageComponent },
-  {path: 'submodule', loadChildren: '../../modules/test-module/test-module.module#TestModuleModule'},
+  //This is for the other teams sub modules
+  //{path: 'submodule', loadChildren: '../../modules/test-module/test-module.module#TestModuleModule'},
 ]
 @NgModule({
   imports: [
