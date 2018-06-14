@@ -21,7 +21,7 @@
 
 ## documentation
 1. run command `compodoc src -s`.
-1. [go to http://127.0.0.1:8080/](http://127.0.0.1:8080/)
+1. open Compodoc URL specified in command line.
 
 ## license
 __interface-web__ is licensed under the terms of the [MIT License](https://github.com/revaturecloud/interface-web/blob/master/LICENSE).
