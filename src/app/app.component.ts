@@ -14,9 +14,8 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-
- /**
+  /**
    * component title
    */
-  title = 'app';
+  title = 'Revature Housing';
 }

@@ -1,3 +1,4 @@
+import { MatCardModule, MatGridListModule } from '@angular/material';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
@@ -8,9 +9,12 @@ describe('NavbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [NavbarComponent]
-    })
-      .compileComponents();
+      declarations: [NavbarComponent],
+      imports: [
+        MatCardModule,
+        MatGridListModule
+      ]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +25,31 @@ describe('NavbarComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have Login button', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('button').textContent).toEqual('Login');
+  });
+
+  it('should have link to home', () => {
+    const compiled = fixture.nativeElement;
+    const select = compiled.querySelector('a[href="#"]');
+    expect(select).toBeTruthy();
+    expect(select.textContent).toBe('Home');
+  });
+
+  it('should have link to selection', () => {
+    const compiled = fixture.nativeElement;
+    const select = compiled.querySelector('a[href="/selection"]');
+    expect(select).toBeTruthy();
+    expect(select.textContent).toBe('Selection');
+  });
+
+  it('should have link to forecasting', () => {
+    const compiled = fixture.nativeElement;
+    const select = compiled.querySelector('a[href="/forecast"]');
+    expect(select).toBeTruthy();
+    expect(select.textContent).toBe('Forecast');
   });
 });
