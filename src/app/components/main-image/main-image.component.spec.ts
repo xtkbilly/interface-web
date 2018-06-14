@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MainImageComponent } from './main-image.component';
+import { MatCardModule, MatGridListModule } from '@angular/material';
 
 describe('MainImageComponent', () => {
   let component: MainImageComponent;
@@ -8,7 +9,8 @@ describe('MainImageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainImageComponent ]
+      declarations: [ MainImageComponent ],
+      imports: [MatCardModule, MatGridListModule]
     })
     .compileComponents();
   }));
@@ -22,4 +24,9 @@ describe('MainImageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have correct img src', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('img').src).toContain('/assets/img/housing.jpg');
+  }));
 });
