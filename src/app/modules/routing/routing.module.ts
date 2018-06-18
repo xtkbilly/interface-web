@@ -1,3 +1,4 @@
+import { ForecastModule } from '@revaturecloud/forecast/src/lib/forecast.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from "@angular/router";
@@ -5,8 +6,7 @@ import { MainImageComponent } from '../../components/main-image/main-image.compo
 
 const appRoutes: Routes = [
   { path: '', component: MainImageComponent },
-  //This is for the other teams sub modules
-  //{path: 'submodule', loadChildren: '../../modules/test-module/test-module.module#TestModuleModule'},
+  { path: 'forecast', loadChildren: '@revaturecloud/forecast/src/lib/forecast.module#ForecastModule'},
 ]
 @NgModule({
   imports: [

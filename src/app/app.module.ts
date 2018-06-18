@@ -14,6 +14,7 @@ import {
 import { MainImageComponent } from './components/main-image/main-image.component';
 import { RouterModule } from '@angular/router';
 import { RoutingModule } from './modules/routing/routing.module';
+import { ForecastModule } from '@revaturecloud/forecast/src/lib/forecast.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { RoutingModule } from './modules/routing/routing.module';
     MatCardModule,
     RoutingModule,
     RouterModule,
+    ForecastModule
   ],
   providers: [],
   bootstrap: [AppComponent]
