@@ -1,3 +1,4 @@
+import { SelectionModule } from '@revaturecloud/selection';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -9,12 +10,13 @@ import {
   MatSidenavModule,
   MatToolbarModule,
   MatGridListModule,
-  MatCardModule
+  MatCardModule,
+  MatIconModule
 } from '@angular/material';
 import { MainImageComponent } from './components/main-image/main-image.component';
 import { RouterModule } from '@angular/router';
 import { RoutingModule } from './modules/routing/routing.module';
-import { ForecastModule } from '@revaturecloud/forecast/src/lib/forecast.module';
+import { ForecastModule } from '@revaturecloud/forecast/';
 
 @NgModule({
   declarations: [
@@ -27,13 +29,15 @@ import { ForecastModule } from '@revaturecloud/forecast/src/lib/forecast.module'
     BrowserModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatIconModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatGridListModule,
     MatCardModule,
     RoutingModule,
     RouterModule,
-    ForecastModule
+    ForecastModule,
+    SelectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
