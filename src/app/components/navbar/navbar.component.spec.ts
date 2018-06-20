@@ -34,21 +34,21 @@ describe('NavbarComponent', () => {
 
   it('should have link to home', () => {
     const compiled = fixture.nativeElement;
-    const select = compiled.querySelector('a[href="#"]');
+    const select = compiled.querySelector('a[routerLink=""]');
     expect(select).toBeTruthy();
     expect(select.textContent).toBe('Home');
   });
 
   it('should have link to selection', () => {
     const compiled = fixture.nativeElement;
-    const select = compiled.querySelector('a[href="/selection"]');
+    const select = compiled.querySelector('a[routerLink="selection"]');
     expect(select).toBeTruthy();
     expect(select.textContent).toBe('Selection');
   });
 
   it('should have link to forecasting', () => {
     const compiled = fixture.nativeElement;
-    const select = compiled.querySelector('a[href="/forecast"]');
+    const select = compiled.querySelector('a[routerLink="forecast"]');
     expect(select).toBeTruthy();
     expect(select.textContent).toBe('Forecast');
   });
